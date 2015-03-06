@@ -18,9 +18,10 @@ public class Front {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int n1,n2,rp,rpt;
+        int n1,n2,rp,rpt,n;
         int bn=0,ml=0;
-        for (int i = 0; i < 5; i++) {
+        n=Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese Número de Veces"));
+        for (int i = 0; i < n; i++) {
         n1=(int) (1 + Math.random() * 12);
         n2=(int) (1 + Math.random() * 12);
         rp=n1*n2;
@@ -34,7 +35,10 @@ public class Front {
             ml=ml+1;
         }    
         }
-        JOptionPane.showMessageDialog(null, bn+" Buenas \n "+ml+" Malas");
+        int ptj=0;
+        ptj=bn*100/n;
+        
+        JOptionPane.showMessageDialog(null, "Cantidad de Buenas: "+bn+" \n Cantidad de Malas: "+ml+" \n Tienes un: "+ptj +"%");
     }
     
 }
