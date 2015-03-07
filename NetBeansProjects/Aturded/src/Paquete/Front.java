@@ -28,7 +28,7 @@ public class Front {
   //      JOptionPane.showMessageDialog(null, n1+" x "+n2 +" = ..." , "PREGUNTA", JOptionPane.INFORMATION_MESSAGE);
         rpt=Integer.parseInt(JOptionPane.showInputDialog(null,n1+" x "+n2 +" = ..."));
         if (rpt==rp) {
-            JOptionPane.showMessageDialog(null, "EXCELENTE");
+            JOptionPane.showMessageDialog(null, "Acertado!");
             bn=bn+1;
         }else{
             JOptionPane.showMessageDialog(null, "No mierda, aprendete la tabla");
@@ -37,8 +37,24 @@ public class Front {
         }
         int ptj=0;
         ptj=bn*100/n;
+        if (ptj<=30) {
+          JOptionPane.showMessageDialog(null, "Cantidad de Buenas: "+bn+" \n Cantidad de Malas: "+ml+" \n Tienes un: "+ptj +"% \n **");  
+        }else{
+            if (ptj>31 && ptj <50) {
+                JOptionPane.showMessageDialog(null, "Cantidad de Buenas: "+bn+" \n Cantidad de Malas: "+ml+" \n Tienes un: "+ptj +"%\n ***");
+            }else{
+                if (ptj>=51 && ptj<80) {
+                    JOptionPane.showMessageDialog(null, "Cantidad de Buenas: "+bn+" \n Cantidad de Malas: "+ml+" \n Tienes un: "+ptj +"%\n ****");
+                }else{
+                    if (ptj>=81) {
+                        JOptionPane.showMessageDialog(null, "Cantidad de Buenas: "+bn+" \n Cantidad de Malas: "+ml+" \n Tienes un: "+ptj +"%\n *****");
+                    }
+                }
+            }
+        }
+            
         
-        JOptionPane.showMessageDialog(null, "Cantidad de Buenas: "+bn+" \n Cantidad de Malas: "+ml+" \n Tienes un: "+ptj +"%");
+      //  JOptionPane.showMessageDialog(null, "Cantidad de Buenas: "+bn+" \n Cantidad de Malas: "+ml+" \n Tienes un: "+ptj +"%");
     }
     
 }
