@@ -152,7 +152,7 @@ ArregloCuatro oa=new ArregloCuatro();
         // TODO add your handling code here:
         try{
         int cantidad;
-              cantidad=Integer.parseInt(txtel.getText());
+            cantidad=Integer.parseInt(txtel.getText());
             oa.asignar(cantidad);
             oa.leerArreglo();
             txtadatos.append(oa.mostrar()); 

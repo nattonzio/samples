@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  * @author LAB
  */
 public class ArregloCuatro {
-     private int c;
+    private int c;
     private int arreglo[];
             
     public int asignar(int can) //Asigna la cantidad de elementos al arreglo
