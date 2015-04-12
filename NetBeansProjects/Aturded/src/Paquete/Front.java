@@ -31,7 +31,7 @@ public class Front {
             JOptionPane.showMessageDialog(null, "Acertado!");
             bn=bn+1;
         }else{
-            JOptionPane.showMessageDialog(null, "No mierda, aprendete la tabla");
+            JOptionPane.showMessageDialog(null, "No mierda!, aprendete la tabla");
             ml=ml+1;
         }    
         }
